@@ -6,8 +6,11 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: content/blog
+    path: '{{slug}}/index'
     create: true
+    media_folder: ''
+    public_folder: ''
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
